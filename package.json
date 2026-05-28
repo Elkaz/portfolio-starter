@@ -1,12 +1,13 @@
 {
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "start": "node server.js"
+},
   "dependencies": {
     "@tailwindcss/vite": "latest",
     "@vitejs/plugin-react": "latest",
+    "express": "^5.2.1",
     "lucide-react": "^1.16.0",
     "react": "latest",
     "react-dom": "latest",

@@ -11,6 +11,6 @@
     "react": "latest",
     "react-dom": "latest",
     "tailwindcss": "latest",
-    "vite": "latest"
+    "vite": "^8.0.14"
   }
 }

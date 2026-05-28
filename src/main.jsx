@@ -5,6 +5,6 @@ import App from "./app.jsx";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <app />
+    <App />
   </React.StrictMode>,
 );

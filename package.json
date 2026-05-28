@@ -12,5 +12,8 @@
     "react-dom": "latest",
     "tailwindcss": "latest",
     "vite": "^8.0.14"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }

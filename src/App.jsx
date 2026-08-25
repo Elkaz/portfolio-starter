@@ -83,6 +83,13 @@ export default function App() {
         "c_fill,g_face,w_600,ar_16:9/e_improve:50/e_vibrance:20/e_sharpen:30/r_20,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
       ),
     },
+    {
+      title: "Rumblr",
+      desc: "A full-stack social platform for thoughtful disagreement, built with React, Node.js, Express, SQLite, JWT authentication, and Socket.IO.",
+      link: "https://github.com/Elkaz/rumblr/tree/demo",
+      image:
+        "https://raw.githubusercontent.com/Elkaz/rumblr/demo/app/src/assets/rumblr-watermark.png",
+    },
   ];
 
   return (
@@ -306,6 +313,17 @@ export default function App() {
                           "c_fill,g_face,w_320,h_420,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
                         )}
                         alt="Event Startup preview"
+                        className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                        loading="lazy"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent opacity-40 group-hover:opacity-80 transition-opacity" />
+                    </div>
+                  )}
+                  {project.title === "Rumblr" && (
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[12rem] mx-auto aspect-[3/4] mb-4">
+                      <img
+                        src={project.image}
+                        alt="Rumblr project preview"
                         className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
                         loading="lazy"
                       />

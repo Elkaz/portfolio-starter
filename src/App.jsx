@@ -88,7 +88,7 @@ export default function App() {
       desc: 'RUMBLR is an online "hating" site where users respond to controversial statements, get mismatched with opposing views, and challenge each other to private one-on-one rumbles that either user can end at any time. Built with React, Node.js, Express, PostgreSQL, Knex, JWT authentication, Socket.IO, and the OpenAI Moderation API.',
       links: [
         { label: "Frontend", href: "http://localhost:5173/" },
-        { label: "Backend API", href: "http://localhost:3001/api/docs" },
+        { label: "Backend API", href: "https://rumblr-api.onrender.com/" },
       ],
       image:
         "https://raw.githubusercontent.com/Elkaz/rumblr/demo/app/public/images/rumblr-logo-bg.png",

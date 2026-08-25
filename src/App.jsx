@@ -173,12 +173,12 @@ export default function App() {
             <div className="w-72 sm:w-80 md:w-full md:max-w-sm lg:max-w-md">
               <img
                 src={cloudinaryImage(
-                  "61e51081-cde9-4021-b8df-99ed7afb1713",
+                  "E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu",
                   "c_fill,g_face,w_600,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_80,bo_3px_solid_rgb:f43f5e/f_auto/q_auto",
                 )}
-                srcSet={`${heroImage("61e51081-cde9-4021-b8df-99ed7afb1713", 200)} 200w, 
-                   ${heroImage("61e51081-cde9-4021-b8df-99ed7afb1713", 500)} 500w, 
-                   ${heroImage("61e51081-cde9-4021-b8df-99ed7afb1713", 800)} 800w`}
+                srcSet={`${heroImage("E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu", 200)} 200w, 
+                   ${heroImage("E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu", 500)} 500w, 
+                   ${heroImage("E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu", 800)} 800w`}
                 sizes="(max-width: 640px) 288px, (max-width: 768px) 320px, (max-width: 1024px) 384px, 448px"
                 alt="Portfolio profile portrait"
                 className="w-full"

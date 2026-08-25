@@ -91,7 +91,7 @@ export default function App() {
         { label: "Backend API", href: "http://localhost:3001/api/docs" },
       ],
       image:
-        "https://raw.githubusercontent.com/Elkaz/rumblr/demo/app/src/assets/rumblr-watermark.png",
+        "https://raw.githubusercontent.com/Elkaz/rumblr/demo/app/public/images/rumblr-logo-bg.png",
     },
   ];
 

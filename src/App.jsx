@@ -86,7 +86,10 @@ export default function App() {
     {
       title: "Rumblr",
       desc: "A full-stack social platform for thoughtful disagreement, built with React, Node.js, Express, SQLite, JWT authentication, and Socket.IO.",
-      link: "https://github.com/Elkaz/rumblr/tree/demo",
+      links: [
+        { label: "Frontend", href: "http://localhost:5173/" },
+        { label: "Backend API", href: "http://localhost:3001/api/docs" },
+      ],
       image:
         "https://raw.githubusercontent.com/Elkaz/rumblr/demo/app/src/assets/rumblr-watermark.png",
     },
@@ -337,20 +340,40 @@ export default function App() {
                     {project.desc}
                   </p>
                 </div>
-                <a
-                  href={project.link}
-                  className="flex items-center gap-3 text-rose-500 font-semibold text-[10px] uppercase tracking-[0.3em] border-b border-rose-200 pb-2 hover:border-rose-500 transition-colors w-max"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  {project.title === "Event Startup"
-                    ? "API Documentation"
-                    : "Visit Project"}
-                  <ExternalLink
-                    size={14}
-                    className="group-hover:translate-x-1 transition-transform"
-                  />
-                </a>
+                <div className="flex flex-wrap items-center gap-5">
+                  {project.links ? (
+                    project.links.map((projectLink) => (
+                      <a
+                        key={projectLink.label}
+                        href={projectLink.href}
+                        className="flex items-center gap-3 text-rose-500 font-semibold text-[10px] uppercase tracking-[0.3em] border-b border-rose-200 pb-2 hover:border-rose-500 transition-colors w-max"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        {projectLink.label}
+                        <ExternalLink
+                          size={14}
+                          className="group-hover:translate-x-1 transition-transform"
+                        />
+                      </a>
+                    ))
+                  ) : (
+                    <a
+                      href={project.link}
+                      className="flex items-center gap-3 text-rose-500 font-semibold text-[10px] uppercase tracking-[0.3em] border-b border-rose-200 pb-2 hover:border-rose-500 transition-colors w-max"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {project.title === "Event Startup"
+                        ? "API Documentation"
+                        : "Visit Project"}
+                      <ExternalLink
+                        size={14}
+                        className="group-hover:translate-x-1 transition-transform"
+                      />
+                    </a>
+                  )}
+                </div>
               </article>
             ))}
           </div>

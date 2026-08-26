@@ -248,9 +248,9 @@ export default function App() {
             {workExperience.map((job) => (
               <article
                 key={`${job.company}-${job.title}`}
-                className="group relative"
+                className="group relative max-w-xs mx-auto w-full"
               >
-                <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full aspect-[3/4] max-w-xs mx-auto">
+                <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full aspect-[3/4]">
                   <img
                     src={cloudinaryImage(
                       job.image || job.id,
@@ -262,15 +262,14 @@ export default function App() {
                     loading="lazy"
                     className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent opacity-40 group-hover:opacity-80 transition-opacity" />
-                  <div className="absolute bottom-0 left-0 p-6 w-full transform translate-y-4 group-hover:translate-y-0 transition-transform">
-                    <p className="text-white font-mono text-[10px] uppercase tracking-[0.3em] mb-2 font-bold bg-black px-3 py-1 rounded-md inline-block">
-                      {job.company}
-                    </p>
-                    <h3 className="text-2xl font-light text-white">
-                      {job.title}
-                    </h3>
-                  </div>
+                </div>
+                <div className="pt-5 text-center md:text-left">
+                  <p className="text-amber-500 font-mono text-[10px] uppercase tracking-[0.3em] mb-2 font-bold">
+                    {job.company}
+                  </p>
+                  <h3 className="text-2xl font-light text-zinc-900 leading-tight">
+                    {job.title}
+                  </h3>
                 </div>
               </article>
             ))}

@@ -10,9 +10,6 @@ import {
   ChevronRight,
 } from "lucide-react";
 
-// Workshop TODO:
-// Replace "demo" with your own Cloudinary cloud name.
-// You can find it in your Cloudinary dashboard.
 const CLOUD_NAME = "dagd4g0bc";
 
 function heroImage(publicId, width) {
@@ -248,7 +245,7 @@ export default function App() {
             {workExperience.map((job) => (
               <article
                 key={`${job.company}-${job.title}`}
-                className="group relative max-w-xs mx-auto w-full"
+                className="group relative max-w-[15rem] mx-auto w-full"
               >
                 <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full aspect-[3/4]">
                   <img
@@ -267,7 +264,7 @@ export default function App() {
                   <p className="text-amber-500 font-mono text-[10px] uppercase tracking-[0.3em] mb-2 font-bold">
                     {job.company}
                   </p>
-                  <h3 className="text-2xl font-light text-zinc-900 leading-tight">
+                  <h3 className="text-xl font-light text-zinc-900 leading-tight">
                     {job.title}
                   </h3>
                 </div>

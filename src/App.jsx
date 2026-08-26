@@ -178,7 +178,7 @@ export default function App() {
       <header className="min-h-screen flex items-center pt-20 px-6 bg-gradient-to-br from-amber-50/60 via-white to-rose-50/40">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-[minmax(280px,0.85fr)_minmax(0,1.15fr)] gap-12 lg:gap-24 items-center py-24 lg:py-32">
           <div className="flex justify-center md:justify-end">
-            <div className="w-64 sm:w-72 md:w-full md:max-w-sm lg:max-w-md">
+            <div className="w-56 sm:w-64 md:w-full md:max-w-xs lg:max-w-sm">
               <img
                 src={cloudinaryImage(
                   "E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu",
@@ -198,7 +198,7 @@ export default function App() {
             <p className="text-rose-400 text-lg italic mb-6">
               Glad you're here — I'm
             </p>
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-tighter mb-8 leading-[0.92] uppercase text-zinc-900">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight tracking-tighter mb-8 leading-[0.92] uppercase text-zinc-900">
               Ela <br />
               <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-amber-400">
                 Kazemzadeh <br />

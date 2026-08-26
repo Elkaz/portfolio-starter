@@ -175,7 +175,7 @@ export default function App() {
       <header className="min-h-screen flex items-center pt-20 px-6 bg-gradient-to-br from-amber-50/60 via-white to-rose-50/40">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-[minmax(280px,0.85fr)_minmax(0,1.15fr)] gap-12 lg:gap-24 items-center py-24 lg:py-32">
           <div className="flex justify-center md:justify-end">
-            <div className="w-56 sm:w-64 md:w-full md:max-w-xs lg:max-w-sm">
+            <div className="w-44 sm:w-52 md:w-full md:max-w-[14rem] lg:max-w-xs">
               <img
                 src={cloudinaryImage(
                   "E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu",

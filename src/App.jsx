@@ -618,7 +618,7 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
             <div className="flex flex-col items-center text-center p-10 bg-white rounded-2xl shadow border border-rose-50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-rose-100 cursor-pointer">
               <span className="text-6xl mb-4">♟️</span>
               <span className="text-xl text-zinc-700 font-semibold mb-2">
@@ -644,6 +644,15 @@ export default function App() {
               </span>
               <span className="text-zinc-400 text-base">
                 Energy, movement, and refreshment!
+              </span>
+            </div>
+            <div className="flex flex-col items-center text-center p-10 bg-white rounded-2xl shadow border border-rose-50 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-rose-100 cursor-pointer">
+              <span className="text-6xl mb-4">🏀</span>
+              <span className="text-xl text-zinc-700 font-semibold mb-2">
+                Playing Basketball
+              </span>
+              <span className="text-zinc-400 text-base">
+                Teamwork, energy, and movement!
               </span>
             </div>
           </div>

@@ -174,9 +174,9 @@ export default function App() {
       </nav>
 
       <header className="min-h-screen flex items-center pt-20 px-6 bg-gradient-to-br from-amber-50/60 via-white to-rose-50/40">
-        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-16 items-center py-20">
+        <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-[minmax(280px,0.85fr)_minmax(0,1.15fr)] gap-12 lg:gap-24 items-center py-24 lg:py-32">
           <div className="flex justify-center md:justify-end">
-            <div className="w-72 sm:w-80 md:w-full md:max-w-sm lg:max-w-md">
+            <div className="w-64 sm:w-72 md:w-full md:max-w-sm lg:max-w-md">
               <img
                 src={cloudinaryImage(
                   "E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu",
@@ -193,12 +193,10 @@ export default function App() {
           </div>
 
           <div className="text-center md:text-left">
-            <p className="text-rose-400 text-lg italic mb-3">
+            <p className="text-rose-400 text-lg italic mb-6">
               Glad you're here — I'm
-              <br />
-              <br />
             </p>
-            <h1 className="text-5xl md:text-8xl font-extralight tracking-tighter mb-6 leading-[0.9] uppercase text-zinc-900">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-extralight tracking-tighter mb-8 leading-[0.92] uppercase text-zinc-900">
               Ela <br />
               <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-amber-400">
                 Kazemzadeh <br />
@@ -254,7 +252,9 @@ export default function App() {
                   <img
                     src={cloudinaryImage(
                       job.id,
-                      "c_fill,g_face,w_320,h_420,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
+                      job.company === "Narin Co"
+                        ? "c_fill,g_auto,w_320,h_420,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto"
+                        : "c_fill,g_face,w_320,h_420,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
                     )}
                     alt={`${job.title} at ${job.company}`}
                     loading="lazy"
@@ -292,11 +292,11 @@ export default function App() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10 items-stretch">
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="group space-y-8 rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-rose-100 p-6 flex flex-col justify-between max-w-md mx-auto"
+                className="group space-y-8 rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-rose-100 p-6 flex flex-col justify-between w-full"
               >
                 <div>
                   {/* Project image*/}

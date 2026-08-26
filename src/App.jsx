@@ -43,7 +43,7 @@ function cloudinaryVideoPoster(publicId, offset, transformations) {
 const workExperience = [
   {
     id: "samples/cup-on-a-table",
-    image: "1781698764046_nnyw28",
+    image: "traced",
     title: "Head of Operations",
     company: "Traced Systems",
   },

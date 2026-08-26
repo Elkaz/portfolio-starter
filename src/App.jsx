@@ -70,22 +70,6 @@ export default function App() {
 
   const projects = [
     {
-      title: "Memory Card Game",
-      desc: "A memory game built with a focus on fun and challenge. Play online and test your memory skills.",
-      link: "https://game-mind-hunters-project.onrender.com/",
-      image:
-        "https://res.cloudinary.com/dagd4g0bc/image/upload/v1716900000/game-memory-demo.png",
-    },
-    {
-      title: "Event Startup",
-      desc: "Built a secure Events backend API using Node.js, Express.js, PostgreSQL, and JWT authentication. Developed RESTful APIs with database integration.",
-      link: "https://mid-backend-project.onrender.com/docs",
-      image: cloudinaryImage(
-        "samples/balloons",
-        "c_fill,g_face,w_600,ar_16:9/e_improve:50/e_vibrance:20/e_sharpen:30/r_20,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
-      ),
-    },
-    {
       title: "Rumblr",
       desc: 'RUMBLR is an online "hating" site where users respond to controversial statements, get mismatched with opposing views, and challenge each other to private one-on-one rumbles that either user can end at any time. Built with React, Node.js, Express, PostgreSQL, Knex, JWT authentication, Socket.IO, and the OpenAI Moderation API.',
       links: [
@@ -100,6 +84,22 @@ export default function App() {
       ],
       image:
         "https://raw.githubusercontent.com/Elkaz/rumblr/demo/app/public/images/rumblr-logo-bg.png",
+    },
+    {
+      title: "Event Startup",
+      desc: "Built a secure Events backend API using Node.js, Express.js, PostgreSQL, and JWT authentication. Developed RESTful APIs with database integration.",
+      link: "https://mid-backend-project.onrender.com/docs",
+      image: cloudinaryImage(
+        "samples/balloons",
+        "c_fill,g_face,w_600,ar_16:9/e_improve:50/e_vibrance:20/e_sharpen:30/r_20,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
+      ),
+    },
+    {
+      title: "Memory Card Game",
+      desc: "A memory game built with a focus on fun and challenge. Play online and test your memory skills.",
+      link: "https://game-mind-hunters-project.onrender.com/",
+      image:
+        "https://res.cloudinary.com/dagd4g0bc/image/upload/v1716900000/game-memory-demo.png",
     },
   ];
 

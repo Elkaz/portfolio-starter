@@ -294,7 +294,7 @@ export default function App() {
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="group space-y-5 rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-rose-100 p-4 flex flex-col justify-between w-full max-w-[18rem] mx-auto"
+                className="group space-y-5 rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-rose-100 p-4 flex flex-col justify-between w-full max-w-sm mx-auto"
               >
                 <div>
                   {/* Project image*/}

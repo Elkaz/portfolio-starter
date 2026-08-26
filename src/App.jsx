@@ -299,11 +299,11 @@ export default function App() {
                 <div>
                   {/* Project image*/}
                   {project.title === "Memory Card Game" && (
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[14rem] mx-auto aspect-[4/3] mb-3">
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[14rem] mx-auto aspect-[5/4] mb-3">
                       <img
                         src={cloudinaryImage(
                           "memory-card-game-42-kartli-hafiza-ve-eslestirme-oyunu-su-alti-moritoys-788482_1500x_gazk53",
-                          "c_fill,g_face,w_420,h_315,ar_4:3/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
+                          "c_fill,g_face,w_420,h_336,ar_5:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
                         )}
                         alt="Memory Card Game preview"
                         className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
@@ -313,11 +313,11 @@ export default function App() {
                     </div>
                   )}
                   {project.title === "Event Startup" && (
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[14rem] mx-auto aspect-[4/3] mb-3">
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[14rem] mx-auto aspect-[5/4] mb-3">
                       <img
                         src={cloudinaryImage(
                           "samples/balloons",
-                          "c_fill,g_face,w_420,h_315,ar_4:3/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
+                          "c_fill,g_face,w_420,h_336,ar_5:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
                         )}
                         alt="Event Startup preview"
                         className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
@@ -327,11 +327,11 @@ export default function App() {
                     </div>
                   )}
                   {project.title === "Rumblr" && (
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[14rem] mx-auto aspect-[4/3] mb-3">
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[14rem] mx-auto aspect-[5/4] mb-3">
                       <img
                         src={project.image}
                         alt="Rumblr project preview"
-                        className="object-cover w-full h-full transition-transform duration-1000 group-hover:scale-105"
+                        className="object-contain w-full h-full p-4 transition-transform duration-1000 group-hover:scale-105"
                         loading="lazy"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-zinc-900/60 via-transparent to-transparent opacity-40 group-hover:opacity-80 transition-opacity" />

@@ -48,6 +48,7 @@ const workExperience = [
   },
   {
     id: "samples/two-ladies",
+    image: "walls-io-t6avEd_wyLk-unsplash_ddrkrq",
     title: "Co-founder, Operations & Project Management",
     company: "Narin Co",
   },
@@ -251,8 +252,8 @@ export default function App() {
                 <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full aspect-[3/4] max-w-xs mx-auto">
                   <img
                     src={cloudinaryImage(
-                      job.id,
-                      job.company === "Narin Co"
+                      job.image || job.id,
+                      job.image
                         ? "c_fill,g_auto,w_320,h_420,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto"
                         : "c_fill,g_face,w_320,h_420,ar_3:4/e_improve:50/e_vibrance:20/e_sharpen:30/r_40,bo_2px_solid_rgb:f43f5e/f_auto/q_auto",
                     )}

@@ -175,7 +175,7 @@ export default function App() {
       <header className="min-h-screen flex items-center pt-20 px-6 bg-gradient-to-br from-amber-50/60 via-white to-rose-50/40">
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-[minmax(280px,0.85fr)_minmax(0,1.15fr)] gap-12 lg:gap-24 items-center py-24 lg:py-32">
           <div className="flex justify-center md:justify-end">
-            <div className="w-56 sm:w-64 md:w-full md:max-w-xs lg:max-w-sm">
+            <div className="w-48 sm:w-56 md:w-full md:max-w-[14rem] lg:max-w-xs">
               <img
                 src={cloudinaryImage(
                   "E147F439-ACBE-4643-88BA-790BCA03C9A1_2_vpz9eu",
@@ -195,7 +195,7 @@ export default function App() {
             <p className="text-rose-400 text-lg italic mb-6">
               Glad you're here — I'm
             </p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extralight tracking-tighter mb-8 leading-[0.92] uppercase text-zinc-900">
+            <h1 className="text-5xl md:text-5xl lg:text-6xl font-extralight tracking-tighter mb-8 leading-[0.92] uppercase text-zinc-900">
               Ela <br />
               <span className="font-black text-transparent bg-clip-text bg-gradient-to-r from-rose-500 to-amber-400">
                 Kazemzadeh <br />
@@ -294,12 +294,12 @@ export default function App() {
             {projects.map((project) => (
               <article
                 key={project.title}
-                className="group space-y-8 rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-rose-100 p-6 flex flex-col justify-between w-full max-w-sm mx-auto"
+                className="group space-y-6 rounded-[2.5rem] overflow-hidden shadow-2xl bg-gradient-to-br from-rose-50 via-white to-amber-50 border border-rose-100 p-5 flex flex-col justify-between w-full max-w-xs mx-auto"
               >
                 <div>
                   {/* Project image*/}
                   {project.title === "Memory Card Game" && (
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[12rem] mx-auto aspect-[3/4] mb-4">
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[10rem] mx-auto aspect-[3/4] mb-4">
                       <img
                         src={cloudinaryImage(
                           "memory-card-game-42-kartli-hafiza-ve-eslestirme-oyunu-su-alti-moritoys-788482_1500x_gazk53",
@@ -313,7 +313,7 @@ export default function App() {
                     </div>
                   )}
                   {project.title === "Event Startup" && (
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[12rem] mx-auto aspect-[3/4] mb-4">
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[10rem] mx-auto aspect-[3/4] mb-4">
                       <img
                         src={cloudinaryImage(
                           "samples/balloons",
@@ -327,7 +327,7 @@ export default function App() {
                     </div>
                   )}
                   {project.title === "Rumblr" && (
-                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[12rem] mx-auto aspect-[3/4] mb-4">
+                    <div className="relative flex items-center justify-center overflow-hidden rounded-3xl bg-zinc-50 border border-zinc-100 transition-all duration-700 hover:shadow-2xl hover:shadow-rose-100 w-full max-w-[10rem] mx-auto aspect-[3/4] mb-4">
                       <img
                         src={project.image}
                         alt="Rumblr project preview"

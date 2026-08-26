@@ -706,7 +706,7 @@ export default function App() {
                 LinkedIn
               </a>
               <a
-                href="/Ela%20Kazemzadeh_CV_HYF.pdf"
+                href="/Ela%20Kazemzadeh_CV_2026.pdf"
                 className="hover:text-rose-500 transition-colors flex items-center gap-2"
                 target="_blank"
                 rel="noopener noreferrer"
